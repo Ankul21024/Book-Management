@@ -6,25 +6,27 @@ import { Link } from 'react-router-dom';
 // eslint-disable-next-line react/prop-types
 function Navbar({ userEmail, onLogout }) {
   const handleLogout = () => {
-    // Perform logout logic here
+    // Call the onLogout function passed as a prop
     onLogout();
   };
 
   return (
     <nav>
       <ul>
-        <li>Welcome, {userEmail || 'Guest'}</li> {/* Display "Guest" if userEmail is empty */}
+        <li>Welcome, {userEmail || 'Guest'}</li>
         <Link to="/Bookgrid">
           <li>Home</li>
         </Link>
-        <Link to="/Productcard">
+        <Link to="/cart">
           <li>Manage order</li>
         </Link>
         <Link to="/Register">
           <li>Register</li>
         </Link>
         {userEmail ? (
-          <li onClick={handleLogout}>Logout</li>
+          <Link to="/" onClick={handleLogout}>
+            <li>Logout</li>
+          </Link>
         ) : (
           <Link to="/Login">
             <li>Login</li>

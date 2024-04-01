@@ -2,18 +2,17 @@
 import express from 'express';
 import { MongoClient } from 'mongodb';
 
-// Create an Express app
+
 const app = express();
 const port = 5000;
 
-// MongoDB connection string
+
 const uri = 'mongodb://localhost:27017/bookstore';
 
-// Use JSON middleware
+
 app.use(express.json());
 
-// Enable CORS for all requests
-// Enable CORS for all requests
+
 app.use((_req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
@@ -22,7 +21,7 @@ app.use((_req, res, next) => {
 });
 
 
-// Connect to MongoDB
+
 MongoClient.connect(uri)
     .then(client => {
         console.log('Connected to MongoDB');
