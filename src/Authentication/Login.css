@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.Alogin{
+  margin-left: 400px;
+}
+/* Login Page Container */
+.login-page {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure form takes up at least the viewport height */
+  background-color: #f5f5f5; /* Light background for better contrast */
+  color: black;
+  margin-left: 225px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #192E2F; /* Green color for primary action */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #192E2F; /* Darker green on hover */
+}
+
+/* Optional: Styling for Links (if re-enabled) */
+.forgot-password a,
+.register-now a {
+  color: #333; /* Adjust link color to match your theme */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.forgot-password a:hover,
+.register-now a:hover {
+  color: #192E2F; /* Green on hover */
+}

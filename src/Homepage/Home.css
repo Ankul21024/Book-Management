@@ -1,0 +1,46 @@
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Display three equal columns */
+  gap:  35px;
+  bottom: 30px;
+}
+
+.book-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  margin-bottom: 10px;
+}
+
+.book-info {
+  font-size: 16px;
+  line-height: 1.5;
+  color:black;
+}
+
+.book-info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+} 
+
+.book-info p {
+  margin-bottom: 10px;
+}
+
+.book-info button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

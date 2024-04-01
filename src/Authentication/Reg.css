@@ -1,0 +1,56 @@
+/* RegistrationPage.css */
+
+.registration-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 310px;
+}
+
+.registration-container h2 {
+  text-align: center;
+  color: #192E2F;
+}
+
+.registration-container form {
+  width: 100%;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.registration-container label {
+  font-weight: bold;
+  color: black;
+  display: block;
+}
+
+.registration-container input {
+  width: calc(100% - 20px); /* Set a fixed width for inputs */
+  /* Subtracting 24px to account for padding and border */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.registration-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #192E2F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 150px;
+}
+
+.registration-container button:hover {
+  background-color: #0d1a1b;
+}
